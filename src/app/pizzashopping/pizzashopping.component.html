@@ -1,0 +1,119 @@
+<app-navbar></app-navbar>
+<div class="container-fluid shopping-container mt-4">
+    <div class="row g-4">
+        <div class="col-12 col-lg-8">
+            <div class="card shadow">
+                <div class="card-header bg-white">
+                    <h2 class="mb-0">My Cart</h2>
+                </div>
+                <div class="card-body p-0" *ngIf="(cartItems$ | async)?.length! > 0;else emptyCart">
+                    <div class="cart-row" *ngFor="let item of (cartItems$ | async)"
+                        [hidden]="item.pizza.name === 'Custom Pizza'">
+                        <div class="cart-image">
+                            <img [src] = "item.pizza.image" alt="Pizza">
+                        </div>
+                        <div class="cart-type">
+                            <div class="type-box"
+                                [ngClass]="item.pizza.type =='veg' ? 'green-box' : 'red-box' ">
+                            </div>
+                        </div>
+                        <div class="cart-details">
+                            <h5>{{item.pizza.name}}</h5>
+                            <small>₹{{item.pizza.price}}</small>
+                            <br>
+                            <small *ngIf="item.selectedToppings.length>0"> Toppings:
+                                <span *ngFor="let top of item.selectedToppings; let last=last">
+                                    {{top.tname}}
+                                    <span *ngIf="!last">,</span>
+                                </span>
+                            </small>
+                        </div>
+                        <div class="cart-qty">
+                            <button class="btn btn-secondary" (click)="decrease(item)">
+                                -
+                            </button>
+                            <span>{{item.quantity}}</span>
+                            <button class="btn btn-secondary" (click)="increase(item)">
+                                +
+                            </button>
+                        </div>
+                        <div class="cart-total">
+                            ₹{{ item.total }}
+                        </div>
+                        <div class="cart-delete">
+                            <button class="btn btn-link text-danger" (click)="remove(item)">
+                                <i class="fa fa-trash"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer bg-white" *ngIf="(cartItems$ | async)?.length! > 0">
+                    <div class="text-end">
+                        <h3>
+                            Sub Total : ₹{{getPizzaTotal()}}
+                        </h3>
+                    </div>
+                </div>
+                <ng-template #emptyCart>
+                    <div class="text-center p-5">
+                        <h3>Your Cart is Empty</h3>
+                        <p>Please add a pizza to continue</p>
+                    </div>
+                </ng-template>
+            </div>
+        </div>
+        <div class="col-12 col-lg-4" *ngIf="(cartItems$ | async)?.length! > 0">
+            <div class="card shadow summary-card">
+                <div class="card-header bg-white">
+                    <h4>
+                        The total amount of
+                    </h4>
+                </div>
+                <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                        <span>
+                            Pizza
+                        </span>
+                        <span>
+                            ₹{{getPizzaTotal()}}
+                        </span>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between">
+                        <span class="ingredients-title" (click)="toggleIngredients()"> 
+                            Ingredients
+                            <i class="fa" [ngClass]="showIngredients ? 'fa-chevron-up': 'fa-chevron-down'"></i>
+                        </span>
+                        <span>
+                            ₹{{getToppingsTotal()}}
+                        </span>
+                    </div>
+                    <div class="topping-list" *ngIf="showIngredients">
+                        <div *ngFor="let item of (cartItems$ | async)">
+                            <div *ngFor="let topping of item.selectedToppings" 
+                                class="topping-row">
+                                <small class="topping-name">
+                                    {{topping.tname}}
+                                </small>
+                                <small class="topping-price">
+                                    {{topping.price}}
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between">
+                        <strong>Total</strong>
+                        <strong>₹{{getGrandTotal()}}</strong>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center">
+                <button class="btn btn-warning payclea-buttons"> Pay</button>
+                <button class="btn btn-dark payclea-buttons" (click)="clearCart()">Clear</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+

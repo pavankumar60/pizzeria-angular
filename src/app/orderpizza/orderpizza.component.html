@@ -1,0 +1,37 @@
+<app-navbar></app-navbar>
+<div class="order-container-design">
+    <div class="display-flex">
+        <div class="single-card" *ngFor="let pizza of pizzas">
+            <div class="left">
+                <h1 class="pizza-name">{{pizza.name}}</h1>
+                <div class="type-box" [ngClass]="pizza.type === 'veg' ? 'green-box' : 'red-box'"></div>
+                <p class="pizza-price">₹{{pizza.price}}</p>
+            </div>
+            <div class="middle">
+                <p>{{pizza.description}}</p>
+                <p><span class="for-bold">Ingrediendts : </span>{{pizza.ingredients}}</p>
+                <p><span class="for-bold">Toppings : </span>{{ pizza.toppings.join(', ') }}</p>
+            </div>
+            <div class="right">
+                <img src="{{pizza.image}}"
+                    alt="Pizza" class="paneer-piza">
+                <br>
+                <div class="addtocar-responsive" *ngIf="pizza.quantity == 0; else quantityButtons" >
+                    <button class="btn btn-warning text-white " (click)="addToCart(pizza)">
+                        Add to Cart
+                    </button>
+                </div>
+                <ng-template #quantityButtons>
+                    <div class="d-flex justify-cotent-center align-items-center addtocar-responsive">
+                        <button class="btn btn-danger" (click)="decrease(pizza)">-</button>
+                        <span class="mx-3 fw-bold">
+                            {{ pizza.quantity }}
+                        </span>
+                        <button class="btn btn-success" (click)="increase(pizza)">+</button>
+                    </div>
+                </ng-template>
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

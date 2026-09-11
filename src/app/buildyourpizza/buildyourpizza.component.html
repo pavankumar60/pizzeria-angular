@@ -1,0 +1,26 @@
+<app-navbar></app-navbar>
+<div class="build-container-design">
+    <p>Pizzeria now gives you options to build your own pizza.
+        Customize your pizza by choosing ingredients from the list given bello
+    </p>
+    <div class="table-mixing">
+        <tr *ngFor="let topping of toppings; let i = index"
+            [style.background-color]="i % 2 === 0 ? '#f5f5f5' : '#ffffff'">
+            <td class="image-row"><img [src]="topping.image" width="70"></td>
+            <td class="name-row">{{topping.tname}} <span class="price-class">₹{{topping.price}}</span></td>
+            <td class="check-box">
+                <input [id]="'adding' + i" type="checkbox" (change)="toggleTopping($event,topping)">
+                <label [for]="'adding' + i" style="color: orange; margin-left: 20px;">Add</label>
+            </td>
+        </tr>
+        <div class="total-cost-container">
+            <p class="total-cost">Total Cost : ₹{{totalCost}} </p>
+            <div>
+                <button class="button-pizza-topping" (click)="addToCart()">
+                    Build Your Pizza
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

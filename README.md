@@ -1,27 +1,105 @@
-# Pizzeria
+# 🍕 Pizzeria – Angular Pizza Ordering Application
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.16.
+A responsive pizza ordering web application built with **Angular** and **Bootstrap**. The application allows users to explore pizzas, customize their own pizza with different toppings, manage items in a shopping cart, and place orders.
 
-## Development server
+## 🚀 Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+* 🏠 Home page with pizza-related content
+* 🍕 Browse and order pizzas
+* 🧑‍🍳 Build Your Pizza with customizable toppings
+* 🛒 Add pizzas to the shopping cart
+* ➕ Update items in the cart
+* 🗑️ Remove items from the cart
+* 📦 Order pizza through the ordering flow
+* 🧭 Angular routing for navigation
+* ♻️ Reusable Navbar and Footer components
+* 🔧 Cart management using an Angular service
+* 📦 TypeScript models for Pizza, Cart, and Topping
+* 📱 Responsive user interface using Bootstrap
 
-## Code scaffolding
+## 🛠️ Technologies Used
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+* **Angular 16**
+* **TypeScript**
+* **RxJS**
+* **HTML5**
+* **CSS3**
+* **Bootstrap 5**
+* **Angular Router**
 
-## Build
+## 📂 Project Structure
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```text
+src/
+└── app/
+    ├── buildyourpizza/       # Pizza customization
+    ├── footer/               # Footer component
+    ├── home/                 # Home page
+    ├── models/               # Pizza, Cart and Topping models
+    ├── navbar/               # Navigation component
+    ├── orderpizza/           # Pizza ordering
+    ├── pizzashopping/        # Shopping/cart functionality
+    └── service/              # Cart service
+```
 
-## Running unit tests
+## 💻 Run Locally
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Prerequisites
 
-## Running end-to-end tests
+Make sure you have:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+* Node.js 18
+* npm
+* Angular CLI
 
-## Further help
+### Installation
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Clone the repository:
+
+```bash
+git clone YOUR_GITHUB_REPOSITORY_URL
+```
+
+Navigate into the project:
+
+```bash
+cd Pizzeria
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+ng serve
+```
+
+Open your browser and visit:
+
+```text
+http://localhost:4200/
+```
+
+## 🏗️ Production Build
+
+To create a production build:
+
+```bash
+ng build
+```
+
+The compiled application will be generated inside the `dist/` directory.
+
+## 🌐 Live Demo
+
+**Live Demo:** Coming soon
+
+## 👨‍💻 Developer
+
+**Pavan Kumar**
+
+This project was developed as an Angular application to demonstrate frontend development, component-based architecture, routing, services, models, responsive UI design, and pizza ordering functionality.

@@ -1,0 +1,63 @@
+.build-container-design{
+    border: solid;
+    border-width: 1px;
+    border-color: #ffc107;
+    border-top: none;
+    padding: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.table-mixing{
+    border: 1px solid black;
+    padding-bottom: 10px;
+}
+td {
+    border:1px solid #ddd;
+    padding:10px;
+}
+.price-class{
+    margin-left: 20px;
+}
+.add-class{
+    color: orange;
+}
+.total-cost{
+    font-size: 25px;
+    font-weight: 500;
+    color: blue;
+    margin: 20px;
+}
+.button-pizza-topping{
+    background-color: black;
+    border: 1px solid orange;
+    color: orange;
+    height: 40px;
+    width: 150px;
+    border-radius: 5px;
+    margin-left: 40%;
+}
+
+
+
+@media (min-width:992px){
+    .image-row{
+        width: 225px;
+    }
+    .name-row{
+        width: 200px;
+    }
+    .price-class{
+        margin-left: 50px;
+    }
+    .check-box{
+        width: 150px;
+    }
+    .add-class{
+        margin-left: 20px;
+    }
+}

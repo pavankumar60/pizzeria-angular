@@ -1,0 +1,134 @@
+[
+  {
+
+    "id": 1,
+
+    "type": "veg",
+
+    "price": 290,
+
+    "quantity" : 0,
+
+    "name": "Paneer Tikka",
+
+    "image": "https://t3.ftcdn.net/jpg/07/07/35/50/360_F_707355053_njJ89AiAnZPOfN5zOLn47Waef7EGaJTH.jpg",
+
+    "description": "This is popular italian pizza flavoured with marinated tikka sauce and paneer",
+
+    "ingredients": ["dough/flour", "pizza saucce", "pizza sauce seasoning", "cheese"],
+
+    "toppings": ["Paneer", "Fried Onion", "Green olive", "Capsicum", "Red peprika"]
+
+    },
+
+  {
+
+    "id": 2,
+
+    "type": "nonveg",
+
+    "price": 350,
+
+    "quantity" : 0,
+
+    "name": "Chicken Italiaona",
+
+    "image": "https://t3.ftcdn.net/jpg/07/09/16/60/360_F_709166095_bWboivHFTX1DIWFOtLIFeVSe9hLN5Vgu.jpg",
+
+    "description": "This is popular italian pizza flavoured with light sugary taste and creamy touch",
+
+    "ingredients": ["deep dish pizza mix", "pizza saucce", "pizza sauce seasoning", "cheese", "sugar and cinnomon blend", "plain butter"],
+
+    "toppings": ["Pepperoni", "Chicken Sausage", "Mushroom", "Capsicum", "Black beans"]
+
+  },
+
+  {
+
+    "id": 3,
+
+    "type": "veg",
+
+    "price": 310,
+
+    "quantity" : 0,
+
+    "name": "Veggie Supreme",
+
+    "image": "https://png.pngtree.com/png-clipart/20250221/original/pngtree-veggie-pizza-white-background-1-png-image_20491164.png",
+
+    "description": "This is popular italian pizza flavoured with crushed garlic, with multiple herbs topped up with sweet corn",
+
+    "ingredients": ["deep dish pizza mix", "pizza saucce", "pizza sauce seasoning", "cheese", "garlic herbs", "flavored butter"],
+
+    "toppings": ["Fried Onion", "Sweet corn", "Mushroom", "Capsicum", "Black olive "]
+
+  },
+
+  {
+
+    "id": 4,
+
+    "type": "nonveg",
+
+    "price": 400,
+
+    "quantity" : 0,
+
+    "name": "Tripple Chicken Feast",
+
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBwoWtbxSnG2rvzqew8EkRYP71w3nF5I4O9XORZymVMw&s=10",
+
+    "description": "This is popular italian pizza flavoured with unique greek dressing topped up with keema and meat ball",
+
+    "ingredients": ["low carb pizza dough", "pizza saucce", "pizza sauce seasoning", "cheese", "greek dressing", "cajun"],
+
+    "toppings": ["Chicken keema", "Fried Onion", "Chicken Meat ball", "Capsicum", "Sweet corn"]
+
+  },
+
+  {
+
+    "id": 5,
+
+    "type": "nonveg",
+
+    "price": 625,
+
+    "quantity" : 0,
+
+    "name": "Ultimate Chicken",
+
+    "image": "https://static.vecteezy.com/system/resources/previews/054/679/318/non_2x/a-pizza-with-chicken-tomatoes-and-onions-on-a-white-plate-free-png.png",
+
+    "description": "This is popular italian pizza flavoured with BBA sauce, flavored butter. it has spongy base which gives unique taste with multiple toppings",
+
+    "ingredients": ["deep dish pizza mix", "pizza saucce", "pizza sauce seasoning", "cheese", "BBQ sauce", "cajun", "flavored butter"],
+
+    "toppings": ["Pepperoni", "Fried Onion", "Chicken Meat ball", "Chicken Sausage", "Chicken keema"]
+
+  },
+
+  {
+
+    "id": 6,
+
+    "type": "nonveg",
+
+    "price": 400,
+
+    "quantity" : 0,
+
+    "name": "Tripple Chicken Feast",
+
+    "image": "https://png.pngtree.com/png-vector/20240729/ourmid/pngtree-closeup-of-a-chicken-pizza-with-mouthwatering-toppings-png-image_13274350.png",
+
+    "description": "This is popular italian pizza flavoured with unique greek dressing topped up with keema and meat ball",
+
+    "ingredients": ["low carb pizza dough", "pizza saucce", "pizza sauce seasoning", "cheese", "greek dressing", "cajun"],
+
+    "toppings": ["Chicken keema", "Fried Onion", "Chicken Meat ball", "Capsicum", "Sweet corn"]
+
+  }
+]
+

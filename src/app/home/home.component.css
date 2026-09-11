@@ -1,0 +1,40 @@
+.home-container-design{
+    border: solid;
+    border-width: 1px;
+    border-color: #ffc107;
+    border-top: none;
+    padding: 30px;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-bottom: 5px;
+}
+.our-story-heading{
+    font-weight: 300;
+    text-align: center;
+}
+.hr-line-design{
+    color: #f6c01d; 
+    width: 100%; 
+    margin-top: 5px; 
+    margin-bottom: 1px; 
+}
+.ingredients-image{
+    height: 320px;
+    max-width: 100%;
+    object-fit: cover;
+    display: block;
+
+}
+
+@media (min-width:768px){
+    .pizza-image-ingredients{
+        display: flex;
+    }
+    .content-center-image{
+        display: flex;
+        align-items: center;
+    }
+    .heading-ingredients{
+        margin-bottom: 20px;
+    }
+}
