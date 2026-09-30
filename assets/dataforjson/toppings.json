@@ -1,0 +1,154 @@
+[{
+
+  "id": 101,
+
+  "tname": "Pepperoni",
+
+  "price": 110,
+
+  "image": "https://media.istockphoto.com/id/155384771/photo/heap-of-pepperoni.jpg?s=612x612&w=0&k=20&c=gNg2tbUHdyNKhZXCEv_RtCacJevVJndlp7JifI9gsZc="
+
+},
+
+  {
+
+    "id": 102,
+
+    "tname": "Mushroom",
+
+    "price": 35,
+
+    "image": "https://t4.ftcdn.net/jpg/20/44/20/39/360_F_2044203907_Fxq7vduHbEsSeWkj2esQl0cB2dTLnmCz.jpg"
+
+  },
+
+  {
+
+    "id": 103,
+
+    "tname": "Black beans",
+
+    "price": 45,
+
+    "image": "https://img.magnific.com/premium-photo/dry-black-bean-isolated-white-background_1059832-2370.jpg"
+
+  },
+
+  {
+
+    "id": 104,
+
+    "tname": "Black olive",
+
+    "price": 50,
+
+    "image": "https://t4.ftcdn.net/jpg/10/08/76/35/360_F_1008763507_a4eRpjyFYqGkbbyqpx6Q6LhFXDOnpHaZ.jpg"
+
+  },
+
+  {
+
+    "id": 105,
+
+    "tname": "Green olive",
+
+    "price": 50,
+
+    "image": "https://freshbinge.com/wp-content/uploads/2025/06/Olives-WS-2.png"
+
+  },
+
+  {
+
+    "id": 106,
+
+    "tname": "Jalapeno",
+
+    "price": 45,
+
+    "image": "https://static.vecteezy.com/system/resources/previews/067/216/982/non_2x/sliced-jalapeno-pepper-against-a-white-background-free-png.png"
+  },
+
+  {
+
+    "id": 107,
+
+    "tname": "Chicken",
+
+    "price": 60,
+
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8IItBg1_zBVBlSa3J5CMnC_IafudEAHwEb6UbiZvZsQ&s=10"
+
+  },
+
+  {
+
+    "id": 108,
+
+    "tname": "Tomato",
+
+    "price": 20,
+
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhS2ZG7zF0NWALWyJR5z50NXeJhuF-VHamN_RrprxYZA&s=10"
+
+  },
+
+  {
+
+    "id": 119,
+
+    "tname": "Red peprika",
+
+    "price": 30,
+
+    "image": "https://st.focusedcollection.com/11312302/i/650/focused_147894559-stock-photo-sliced-red-paprika.jpg"
+  },
+
+  {
+
+    "id": 110,
+
+    "tname": "Paneer",
+
+    "price": 45,
+
+    "image": "https://t4.ftcdn.net/jpg/04/71/01/39/360_F_471013994_W5G3BDAoITB3GP5wYdk6zgvfLQZIX96n.jpg"
+
+  },
+
+  {
+
+    "id": 111,
+
+    "tname": "Fried Onion",
+
+    "price": 18,
+
+    "image": "https://img.magnific.com/premium-photo/pile-crispy-golden-brown-fried-onions-white-background_1356356-16181.jpg?semt=ais_hybrid&w=740&q=80"
+
+  },
+
+  {
+
+    "id": 112,
+
+    "tname": "Capsicum",
+
+    "price": 15,
+
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTME7g7yrGbDvbLOJYd__pu8w_TN2ipSrz4khU947iFRg&s=10"
+
+  },
+
+  {
+
+    "id": 114,
+
+    "tname": "Sweet corn",
+
+    "price": 38,
+
+    "image": "https://png.pngtree.com/png-clipart/20240214/original/pngtree-sweet-whole-kernel-corn-on-white-background-whole-photo-png-image_14311856.png"
+
+  }
+]
